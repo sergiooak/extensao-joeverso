@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Joeverso",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.ahnegao.com.br/*"
+            ],
+            "js": [
+                "script.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "16.png",
+        "48": "48.png",
+        "128": "128.png"
+    }
+}
