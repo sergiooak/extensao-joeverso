@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utilidades Ah Negão!</title>
+    <link rel="stylesheet" href="popup.css" />
+    <script src="../assets/vue.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <img
+          class="head"
+          src="https://www.ahnegao.com.br/wp-content/themes/s4f_ahnegao_2.0/content/le-logo-cabeca-min.png"
+        /><img
+          src="https://www.ahnegao.com.br/wp-content/themes/s4f_ahnegao_2.0/content/logo-ahnegao-menor.png"
+          alt="Logo Ah Negão!"
+        />
+      </header>
+      <main>
+        <!-- <section>
+          <h2>Utilidades</h2>
+          <div></div>
+        </section> -->
+        <section>
+          <h2>Zoeiras</h2>
+          <div class="opt">
+            <label for="joeverse">
+              <span>Joeverso</span>
+              <input type="checkbox" v-model="enable_joeverso" />
+            </label>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="version">{{ version }}</div>
+        <a
+          href="https://twitter.com/sergiooak/status/1334969694487506956"
+          target="_blank"
+        >
+          Changelog e sugestões
+        </a>
+      </footer>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

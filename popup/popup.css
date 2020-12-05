@@ -1,0 +1,43 @@
+body {
+  background: #a1488c;
+  width: 210px;
+  height: 350px;
+  padding: 20px;
+  font-family: "PT Sans";
+  font-size: 11px;
+  line-height: 12px;
+  color: #fff;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #58155a;
+}
+header img.head {
+  height: 50px;
+  margin-right: 10px;
+}
+header img {
+  height: 30px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #58155a;
+}
