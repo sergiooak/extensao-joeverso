@@ -66,7 +66,7 @@
             </label>
           </div>
         </section>
-        <div class="alert" v-show="show_refresh" title="Atualize a página do blog para aplicar as atualizações">Atualize a página!</div>
+        <button @click="refesh()" v-show="show_refresh">Atualizar a página!</button>
       </main>
       <footer>
         <div class="version">{{ version }}</div>

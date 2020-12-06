@@ -54,7 +54,13 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+}
+
+.opt label span{
+  flex: 1;
+  padding-right: 8px;
+  line-height: 14px;
 }
 
 .switch {
@@ -108,7 +114,7 @@ input:checked + .slider:before {
   transform: translateX(15px);
 }
 
-.alert {
+button {
   text-align: center;
   background: #fff;
   padding: 8px 16px;
@@ -118,7 +124,12 @@ input:checked + .slider:before {
   color: #a1488c;
   box-shadow: 3px 3px 0px #58155a;
   margin: 10px 0;
-  cursor: help;
+  display: flex;
+  width: 100%;
+  outline: 0!important;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 footer {

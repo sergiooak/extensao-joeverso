@@ -8,6 +8,14 @@ const app = new Vue({
     show_refresh: false,
     version: "v0.2.0",
   },
+  methods: {
+    refesh(){
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.update(tabs[0].id, {url: tabs[0].url});
+      });
+      this.show_refresh = false;
+    }
+  },
   mounted() {
     let vm = this;
     chrome.storage.local.get(["enable_joeverso"], function (result) {
