@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Utilidades Ah Negão!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="popup.css" />
     <script src="../assets/vue.min.js"></script>
   </head>
@@ -19,19 +24,49 @@
         />
       </header>
       <main>
-        <!-- <section>
-          <h2>Utilidades</h2>
-          <div></div>
-        </section> -->
         <section>
-          <h2>Zoeiras</h2>
+          <h2>Utilidades</h2>
           <div class="opt">
-            <label for="joeverse">
-              <span>Joeverso</span>
-              <input type="checkbox" v-model="enable_joeverso" />
+            <label title="Não interfere na monetização do blog!">
+              <span>Ocultar anúncios "duvidosos" do Disqus</span>
+              <div class="switch">
+                <input type="checkbox" v-model="remove_disqus_ads" />
+                <span class="slider"></span>
+              </div>
+            </label>
+          </div>
+          <div class="opt">
+            <label title="Para pessoas com teclado pequeno">
+              <span>Remove a navegação por setinhas</span>
+              <div class="switch">
+                <input type="checkbox" v-model="disable_arrows" />
+                <span class="slider"></span>
+              </div>
             </label>
           </div>
         </section>
+        <section>
+          <h2>Zoeiras</h2>
+          <div class="opt">
+            <label title="Mostra qual persnoalidade no Joe fez o post">
+              <span>Joeverso</span>
+              <div class="switch">
+                <input type="checkbox" v-model="enable_joeverso" />
+                <span class="slider"></span>
+              </div>
+            </label>
+          </div>
+          <div class="opt">
+            <label title="Gostaram do novo botão?">
+              <span>Botão Maior</span>
+              <div class="switch">
+                <input type="checkbox" v-model="bigger_button" />
+                <span class="slider"></span>
+              </div>
+            </label>
+          </div>
+        </section>
+        <div class="alert" v-show="show_refresh" title="Atualize a página do blog para aplicar as atualizações">Atualize a página!</div>
       </main>
       <footer>
         <div class="version">{{ version }}</div>

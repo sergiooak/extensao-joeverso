@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Utilidades Ah Negão",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "permissions": [
         "storage"
@@ -13,10 +13,10 @@
             ],
             "js": [
                 "assets/vue.min.js",
-                "script.js"
+                "inject/inject.js"
             ],
             "css": [
-                "styles.css"
+                "inject/inject.css"
             ]
         }
     ],

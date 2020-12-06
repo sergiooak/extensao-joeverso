@@ -12,17 +12,19 @@ const joeverso = [
       "https://c.disquscdn.com/uploads/users/32702/7671/avatar92.jpg?1546430498",
     name: "El Gato!",
   },
+  {
+    img:
+      "https://c.disquscdn.com/uploads/users/22562/3793/avatar92.jpg?1607134220",
+    name: "Nath Caetano",
+  },
 ];
 chrome.storage.local.set({ joeverso: joeverso });
 
-// Called when the user clicks on the browser action.
-chrome.browserAction.onClicked.addListener(function (tab) {
-  // No tabs or host permissions needed!
-  console.log("Turning " + tab.url + " red!");
-  alert('Teste')
-  chrome.tabs.executeScript({
-    code: 'document.body.style.backgroundColor="red"',
-  });
-});
+let remove_disqus_ads = true;
+chrome.storage.local.set({ remove_disqus_ads: remove_disqus_ads });
 
-alert('Teste 1')
+let bigger_button = true;
+chrome.storage.local.set({ bigger_button: bigger_button });
+
+let disable_arrows = false;
+chrome.storage.local.set({ disable_arrows: disable_arrows });
