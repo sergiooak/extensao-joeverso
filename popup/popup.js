@@ -6,7 +6,7 @@ const app = new Vue({
     bigger_button: true,
     disable_arrows: false,
     show_refresh: false,
-    version: "v0.2.0",
+    version: "v0.2.1",
   },
   methods: {
     refesh(){
